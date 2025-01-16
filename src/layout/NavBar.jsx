@@ -57,9 +57,7 @@ function NavBar() {
           <Navbar.Link href="#" className="text-white hover:text-yellow-300">
             Proyectos
           </Navbar.Link>
-          <Navbar.Link href="#" className="text-white hover:text-yellow-300">
-            Contacto
-          </Navbar.Link>
+         
         </Navbar.Collapse>
       </Navbar>
     </div>
