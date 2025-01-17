@@ -1,0 +1,30 @@
+# General
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /private/
+Allow: /
+
+# Sitemap
+Sitemap: https://arteyvidagardens.pages.dev/sitemap.xml
+
+# Specific Bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: Yandex
+Disallow: /
+
+# Prevent indexing of dynamic URLs
+Disallow: /*?*
+
+# Block specific file types
+Disallow: /*.php$
+Disallow: /*.sql$
+Disallow: /*.zip$
