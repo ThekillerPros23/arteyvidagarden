@@ -1,7 +1,17 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import Pages from 'vite-plugin-pages';
+import Sitemap from 'vite-plugin-sitemap';
 
-// https://vite.dev/config/
+const baseUrl = 'https://arteyvidagardens.pages.dev';
+
 export default defineConfig({
-  plugins: [react()],
-})
+  plugins: [
+    react(),
+    Pages(),
+    Sitemap({
+      hostname: baseUrl,
+      routes: ['/about', '/services', '/contact'], // Agrega tus rutas
+    }),
+  ],
+});
