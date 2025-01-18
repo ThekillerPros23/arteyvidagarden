@@ -11,7 +11,7 @@ export default defineConfig({
     Pages(),
     Sitemap({
       hostname: baseUrl,
-      routes: ['/about', '/services', '/contact'], // Agrega tus rutas
+      routes: ['/about', '/services', '/contact'], 
     }),
   ],
 });
